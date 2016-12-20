@@ -14,6 +14,8 @@
  *  2007-02-22: Initial version
  */
 
+#include "matlab_bgl_types.h"
+
 void expand_int_to_double(int* src, double* dst, mwSize len, double offset)
 {
   int i;
