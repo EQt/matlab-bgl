@@ -22,18 +22,17 @@
  */
 
 
-#include "mex.h"
-
 #if MX_API_VER < 0x07030000
 typedef int mwIndex;
 typedef int mwSize;
 #endif /* MX_API_VER */
 
-#include "matlab_bgl.h"
-
+/* #include "matlab_bgl.h" */
+#include <boost/graph/breadth_first_search.hpp>
 #include <math.h>
 #include <stdlib.h>
 
+#include "mex.h"
 #include "expand_macros.h"
 
 /*
