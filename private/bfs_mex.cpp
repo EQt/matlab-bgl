@@ -35,6 +35,8 @@ typedef int mwSize;
 #include "mex.h"
 #include "expand_macros.h"
 
+using boost::breadth_first_search;
+
 /*
  * The mex function runs a max-flow min-cut problem.
  */
